@@ -1,0 +1,46 @@
+POST http://localhost:4000/users/createUser
+Content-Type:application/json
+
+{
+    "name":"goutham",
+    "gender":"male",
+    "phone":9398141936
+}
+
+###
+GET http://localhost:4000/users/getUsers
+
+###
+GET http://localhost:4000/users/getUsers/?user_name=ab
+
+###
+POST http://localhost:4000/posts/newPost
+Content-Type:application/json
+
+{
+    "id":101,
+    "name":"goutham",
+    "body":"hello this is a sample post by rest client API"
+}
+
+###
+PUT http://localhost:4000/posts/updateViews/?_id=65c837ad0ba998f94bfeee9a
+Content-Type: application/json
+
+{
+    "name":"a"
+}
+
+###
+GET http://localhost:4000/posts/getPosts
+
+###
+GET http://localhost:4000/count/getCount
+
+###
+PUT  http://localhost:4000/count/modifyCount
+Content-Type:application/json
+
+{
+    "title":"to modify count"
+}
